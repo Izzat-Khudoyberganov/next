@@ -4,3 +4,9 @@ export type TodoDataType = {
   title: string;
   completed: boolean;
 };
+
+export interface navDataI {
+  id: number;
+  text: string;
+  href: '/about' | '/contact' | '/';
+}

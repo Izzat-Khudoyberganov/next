@@ -1,4 +1,7 @@
 import { Metadata } from 'next';
+import Banner from '~/components/banner';
+import Header from '~/components/header';
+import Navbar from '~/components/navbar';
 
 export const metadata: Metadata = {
   title: 'Avion',
@@ -10,5 +13,11 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <div className="flex gap-2">Home</div>;
+  return (
+      <>
+        <Header />
+        <Navbar/>
+        <Banner/>
+      </>
+  );
 }
