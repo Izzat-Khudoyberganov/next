@@ -1,5 +1,3 @@
-'use client';
-
 import { TodoDataType } from '~/types';
 
 async function getData() {

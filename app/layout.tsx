@@ -21,8 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <NextTopLoader showSpinner={false}/>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <NextTopLoader showSpinner={false} />
+        {children}
+      </body>
     </html>
   );
 }
