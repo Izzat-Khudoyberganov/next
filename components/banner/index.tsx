@@ -4,9 +4,6 @@ const Banner = () => {
   return (
     <section className="py-[130px] bg-banner-bg bg-no-repeat h-[704px] bg-contain bg-center">
       <div className="container">
-
-
-        
         <div className="max-w-[630px] h-[444px] bg-white w-full py-12 px-14 ml-auto relative">
           <h2 className="text-3xl leading-10 text-title_color text-justify">
             Luxury homeware for people who love timeless design quality
