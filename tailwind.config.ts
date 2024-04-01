@@ -20,6 +20,7 @@ const config = {
     extend: {
       backgroundImage: {
         'banner-bg': "url('/banner-img.png')",
+        'sign-up-bg': "url('/email-bg.png')"
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -55,8 +56,10 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        title_color: "rgb(34,32,46)"
+        title_color: "rgb(34,32,46)",
+        dark_primary: "rgb(42,37,75)"
       },
+      
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',

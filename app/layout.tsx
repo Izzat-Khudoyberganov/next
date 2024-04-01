@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import { Gilda_Display } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
+import QueryContextProvider from '~/context';
+import Header from '~/components/header';
 import './globals.css';
+import Navbar from '~/components/navbar';
 
 const roboto = Gilda_Display({
   weight: '400',
@@ -22,8 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <NextTopLoader showSpinner={false} />
-        {children}
+        <QueryContextProvider>
+          <Header />
+          <Navbar/>
+          <NextTopLoader showSpinner={false} />
+          {children}
+
+        </QueryContextProvider>
       </body>
     </html>
   );

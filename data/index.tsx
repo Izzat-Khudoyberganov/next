@@ -71,29 +71,5 @@ export const brandData: brandDataI[] = [
   },
 ]
 
-export const productData: productDataI[] = [
-  {
-    id: 0,
-    image: img_1,
-    title: "The Dandy chair",
-    price: 250
-  },
-  {
-    id: 1,
-    image: img_2,
-    title: "Rustic Vase Set",
-    price: 155
-  },
-  {
-    id: 2,
-    image: img_3,
-    title: "The Silky Vase",
-    price: 125
-  },
-  {
-    id: 3,
-    image: img_4,
-    title: "The Lucy Lamp",
-    price: 399
-  }
-]
+
+

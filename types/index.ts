@@ -1,5 +1,5 @@
-import { StaticImageData } from "next/image";
-import React, { ReactNode } from "react";
+import { ReactNode } from 'react';
+import { StaticImageData } from 'next/image';
 
 export type TodoDataType = {
   userId: number;
@@ -14,13 +14,15 @@ export interface navDataI {
   href: '/about' | '/contact' | '/';
 }
 
-
-export interface brandDataI extends Pick<TodoDataType, 'id' | "title"> {
-  description: string,
-  icon: ReactNode
+export interface brandDataI extends Pick<TodoDataType, 'id' | 'title'> {
+  description: string;
+  icon: ReactNode;
 }
 
-export interface productDataI extends Pick<TodoDataType, 'id' | "title"> {
-  image: StaticImageData,
-  price: number
+
+
+export interface productDataI extends Pick<TodoDataType, 'id' | 'title'> {
+  image: string;
+  price: number;
+  category: string;
 }
